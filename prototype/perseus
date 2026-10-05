@@ -1,0 +1,154 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+RELEASE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+RELEASE_VERSION="$(cat "${RELEASE}/VERSION")"
+ORIGINAL_CWD="$(pwd)"
+
+if [[ "$#" == "1" && "$1" == "--version" ]]; then
+  printf 'Perseus %s\n' "${RELEASE_VERSION}"
+  exit 0
+fi
+
+PERSEUS_API_PROTOCOL="${PERSEUS_API_PROTOCOL:-openai}"
+PASSTHROUGH_ARGS=()
+while (($#)); do
+  case "$1" in
+    --protocol)
+      if (($# < 2)); then
+        echo "--protocol requires openai or anthropic." >&2
+        exit 2
+      fi
+      PERSEUS_API_PROTOCOL="$2"
+      shift 2
+      ;;
+    --protocol=*)
+      PERSEUS_API_PROTOCOL="${1#*=}"
+      shift
+      ;;
+    *)
+      PASSTHROUGH_ARGS+=("$1")
+      shift
+      ;;
+  esac
+done
+set -- "${PASSTHROUGH_ARGS[@]}"
+
+case "${PERSEUS_API_PROTOCOL}" in
+  openai|openai-responses)
+    PERSEUS_API_PROTOCOL=openai
+    PROTOCOL_API_TYPE=openai-responses
+    ;;
+  anthropic|anthropic-messages)
+    PERSEUS_API_PROTOCOL=anthropic
+    PROTOCOL_API_TYPE=anthropic-messages
+    ;;
+  *)
+    echo "PERSEUS_API_PROTOCOL must be openai or anthropic." >&2
+    exit 2
+    ;;
+esac
+
+PERSEUS_ACTOR_PROVIDER="${PERSEUS_ACTOR_PROVIDER:-openai-compatible}"
+PERSEUS_ACTOR_MODEL="${PERSEUS_ACTOR_MODEL:-}"
+PERSEUS_ACTOR_BASE_URL="${PERSEUS_ACTOR_BASE_URL:-}"
+PERSEUS_ACTOR_API_TYPE="${PERSEUS_ACTOR_API_TYPE:-${PROTOCOL_API_TYPE}}"
+PERSEUS_ACTOR_API_KEY="${PERSEUS_ACTOR_API_KEY:-}"
+PERSEUS_ACTOR_USER_AGENT="${PERSEUS_ACTOR_USER_AGENT:-Perseus/${RELEASE_VERSION}}"
+PERSEUS_ACTOR_THINKING="${PERSEUS_ACTOR_THINKING:-high}"
+PERSEUS_ACTOR_ADAPTIVE_THINKING="${PERSEUS_ACTOR_ADAPTIVE_THINKING:-auto}"
+PERSEUS_ACTOR_NATIVE_CACHE="${PERSEUS_ACTOR_NATIVE_CACHE:-auto}"
+PERSEUS_SPECULATOR_PROVIDER="${PERSEUS_SPECULATOR_PROVIDER:-${PERSEUS_ACTOR_PROVIDER}}"
+PERSEUS_SPECULATOR_MODEL="${PERSEUS_SPECULATOR_MODEL:-${PERSEUS_ACTOR_MODEL}}"
+PERSEUS_SPECULATOR_BASE_URL="${PERSEUS_SPECULATOR_BASE_URL:-${PERSEUS_ACTOR_BASE_URL}}"
+PERSEUS_SPECULATOR_API_TYPE="${PERSEUS_SPECULATOR_API_TYPE:-${PERSEUS_ACTOR_API_TYPE}}"
+PERSEUS_SPECULATOR_API_KEY="${PERSEUS_SPECULATOR_API_KEY:-${PERSEUS_ACTOR_API_KEY}}"
+PERSEUS_SPECULATOR_USER_AGENT="${PERSEUS_SPECULATOR_USER_AGENT:-${PERSEUS_ACTOR_USER_AGENT}}"
+PERSEUS_SPECULATOR_THINKING="${PERSEUS_SPECULATOR_THINKING:-high}"
+PERSEUS_SPECULATOR_ADAPTIVE_THINKING="${PERSEUS_SPECULATOR_ADAPTIVE_THINKING:-${PERSEUS_ACTOR_ADAPTIVE_THINKING}}"
+PERSEUS_SPECULATOR_NATIVE_CACHE="${PERSEUS_SPECULATOR_NATIVE_CACHE:-${PERSEUS_ACTOR_NATIVE_CACHE}}"
+PERSEUS_SE_TOOLS="${PERSEUS_SE_TOOLS-*}"
+PERSEUS_ENABLED="${PERSEUS_ENABLED:-1}"
+PERSEUS_EXACT_ENABLED="${PERSEUS_EXACT_ENABLED:-0}"
+PERSEUS_SEMANTIC_ENABLED="${PERSEUS_SEMANTIC_ENABLED:-auto}"
+case "${PERSEUS_SANDBOX_ENABLED:-off}" in
+  0|off|false|auto) ;;
+  *) echo "Perseus ${RELEASE_VERSION} has no SA implementation." >&2; exit 2 ;;
+esac
+if [[ "${PERSEUS_EXACT_ENABLED}" != "0" ]]; then
+  echo "Perseus ${RELEASE_VERSION} uses persistent SE, not EX replacement." >&2
+  exit 2
+fi
+
+for switch in PERSEUS_ENABLED PERSEUS_EXACT_ENABLED; do
+  if [[ "${!switch}" != "0" && "${!switch}" != "1" ]]; then
+    echo "${switch} must be 0 or 1." >&2
+    exit 2
+  fi
+done
+for policy in PERSEUS_SEMANTIC_ENABLED; do
+  case "${!policy}" in
+    0|1|off|on|false|true|auto) ;;
+    *)
+      echo "${policy} must be auto, on/off, true/false, or 1/0." >&2
+      exit 2
+      ;;
+  esac
+done
+for thinking in PERSEUS_ACTOR_THINKING PERSEUS_SPECULATOR_THINKING; do
+  case "${!thinking}" in
+    off|minimal|low|medium|high|xhigh) ;;
+    *)
+      echo "${thinking} must be off, minimal, low, medium, high, or xhigh." >&2
+      exit 2
+      ;;
+  esac
+done
+
+for policy in PERSEUS_ACTOR_ADAPTIVE_THINKING PERSEUS_SPECULATOR_ADAPTIVE_THINKING PERSEUS_ACTOR_NATIVE_CACHE PERSEUS_SPECULATOR_NATIVE_CACHE; do
+  case "${!policy}" in
+    auto|on|off|true|false|1|0) ;;
+    *)
+      echo "${policy} must be auto, on/off, true/false, or 1/0." >&2
+      exit 2
+      ;;
+  esac
+done
+
+if [[ -z "${PERSEUS_ACTOR_MODEL}" || -z "${PERSEUS_ACTOR_BASE_URL}" || -z "${PERSEUS_ACTOR_API_KEY}" ]]; then
+  echo "PERSEUS_ACTOR_MODEL, PERSEUS_ACTOR_BASE_URL, and PERSEUS_ACTOR_API_KEY are required." >&2
+  exit 2
+fi
+
+for argument in "$@"; do
+  case "${argument}" in
+    --provider|--provider=*|--model|--model=*|--api-key|--api-key=*|--thinking|--thinking=*)
+      echo "Provider/model/thinking are configured through PERSEUS_* variables; unsupported override: ${argument}" >&2
+      exit 2
+      ;;
+  esac
+done
+
+export PERSEUS_API_PROTOCOL
+export PERSEUS_ENABLED PERSEUS_EXACT_ENABLED PERSEUS_SEMANTIC_ENABLED
+export PERSEUS_SE_TOOLS
+export PERSEUS_ACTOR_PROVIDER PERSEUS_ACTOR_MODEL PERSEUS_ACTOR_BASE_URL PERSEUS_ACTOR_API_TYPE PERSEUS_ACTOR_API_KEY PERSEUS_ACTOR_USER_AGENT PERSEUS_ACTOR_THINKING PERSEUS_ACTOR_ADAPTIVE_THINKING PERSEUS_ACTOR_NATIVE_CACHE
+export PERSEUS_SPECULATOR_PROVIDER PERSEUS_SPECULATOR_MODEL PERSEUS_SPECULATOR_BASE_URL PERSEUS_SPECULATOR_API_TYPE PERSEUS_SPECULATOR_API_KEY PERSEUS_SPECULATOR_USER_AGENT PERSEUS_SPECULATOR_THINKING PERSEUS_SPECULATOR_ADAPTIVE_THINKING PERSEUS_SPECULATOR_NATIVE_CACHE
+RUNTIME_HARNESS="$(bash "${RELEASE}/scripts/prepare-harness-runtime.sh")"
+STATE_ROOT="${PERSEUS_STATE_DIR:-${XDG_STATE_HOME:-${HOME}/.local/state}/perseus-${RELEASE_VERSION}}"
+mkdir -p "${STATE_ROOT}"
+STATE_ROOT="$(cd "${STATE_ROOT}" && pwd)"
+AGENT_DIR="${STATE_ROOT}/agent"
+node "${RELEASE}/scripts/configure-agent.mjs" "${AGENT_DIR}"
+export PI_AGENT_DIR="${AGENT_DIR}"
+export PI_CODING_AGENT_DIR="${AGENT_DIR}"
+export PI_OFFLINE=1
+
+cd "${ORIGINAL_CWD}"
+exec "${RUNTIME_HARNESS}/node_modules/.bin/tsx" \
+  --tsconfig "${RUNTIME_HARNESS}/tsconfig.json" \
+  "${RUNTIME_HARNESS}/packages/coding-agent/src/cli.ts" \
+  --provider "${PERSEUS_ACTOR_PROVIDER}" \
+  --model "${PERSEUS_ACTOR_MODEL}" \
+  --thinking "${PERSEUS_ACTOR_THINKING}" \
+  "$@"

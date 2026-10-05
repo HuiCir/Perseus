@@ -1,0 +1,110 @@
+{
+  "checkedOn": "2026-10-05",
+  "scope": "Release staging only. Original plugin directories and live DSH app/profile settings unchanged.",
+  "modelCalls": false,
+  "persistentAccountOrProfileWrites": false,
+  "host": {
+    "typecheck": {
+      "command": "npm run typecheck",
+      "passed": true
+    },
+    "unit": {
+      "command": "npm test",
+      "passed": true,
+      "pass": 24,
+      "fail": 0,
+      "skipped": 1,
+      "skipReason": "Native execution requires the Desktop Node carrier and is covered separately."
+    },
+    "build": {
+      "command": "npm run build",
+      "passed": true
+    },
+    "native": {
+      "command": "npm run test:native",
+      "passed": false,
+      "pass": 12,
+      "fail": 1,
+      "skipped": 0,
+      "attempts": 2,
+      "failingTest": "installed native read/write/edit/grep/glob/bash execute through independent Seatbelt hosts",
+      "failure": "First isolated bash result unexpectedly returned isError=true (execution.test.ts:154).",
+      "serializedRetry": {
+        "command": "npm run test:native -- --test-concurrency=1",
+        "pass": 12,
+        "fail": 1,
+        "skipped": 0
+      },
+      "diagnostics": {
+        "singleBash": {
+          "pass": 1,
+          "fail": 0
+        },
+        "temporaryExecutionCopyWithFailureDetails": {
+          "pass": 5,
+          "fail": 0
+        },
+        "diagnosticCopyPlusNativeIntegration": {
+          "pass": 13,
+          "fail": 0
+        },
+        "originalTestsWithReadOnlyResultLoggingPreload": {
+          "pass": 13,
+          "fail": 0
+        }
+      },
+      "limitation": "Diagnostic instrumentation passes all 13 cases; the uninstrumented release command still fails one assertion. Root cause has not been established. No source implementation or test assertions were changed."
+    },
+    "lockfileRootVersionSynchronized": "0.1.3"
+  },
+  "ui": {
+    "command": "node scripts/smoke.mjs",
+    "passed": true,
+    "scope": "Stubbed browser/module, React and remote/config services; no real Desktop UI verification."
+  },
+  "panel": {
+    "command": "node scripts/smoke.mjs",
+    "passed": true,
+    "checks": 19,
+    "optional": true,
+    "scope": "Stubbed webServer/configEditor only; no real Desktop UI verification."
+  },
+  "packages": [
+    {
+      "name": "dsh-plugin-perseus",
+      "version": "0.1.3",
+      "optional": false,
+      "artifact": "dist/dsh-plugin-perseus-0.1.3.tgz",
+      "sha256": "f940e85e56713ce0b136914d4b2640659d96099f1b10de4d5967464367b22c17",
+      "fileCount": 12,
+      "requiredFilesPresent": true,
+      "excludedDevelopmentAndLiveData": true
+    },
+    {
+      "name": "dsh-plugin-perseus-ui",
+      "version": "0.1.0",
+      "optional": false,
+      "artifact": "dist/dsh-plugin-perseus-ui-0.1.0.tgz",
+      "sha256": "d15783eb8765f217c16c28354bcc9d63e71625b3b13bddbd13d1a16d4adcc9b0",
+      "fileCount": 6,
+      "requiredFilesPresent": true,
+      "excludedDevelopmentAndLiveData": true
+    },
+    {
+      "name": "dsh-plugin-perseus-panel",
+      "version": "0.1.0",
+      "optional": true,
+      "artifact": "dist/dsh-plugin-perseus-panel-0.1.0.tgz",
+      "sha256": "cb1d55a3e98ab79a7d673ab9ffb64d6fe568094df544b3edb9803a51d779a0cf",
+      "fileCount": 5,
+      "requiredFilesPresent": true,
+      "excludedDevelopmentAndLiveData": true
+    }
+  ],
+  "runtime": {
+    "platform": "macOS",
+    "dsh": "0.2.0-rc.2",
+    "desktopNode": "v24.18.1",
+    "developmentNode": "v25.9.0"
+  }
+}

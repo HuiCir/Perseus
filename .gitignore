@@ -1,0 +1,17 @@
+node_modules/
+dist/
+artifacts/
+live-results/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.log
+*.jsonl
+*.tgz
+*.tar.gz
+*.zip
+auth.json
+credentials.json

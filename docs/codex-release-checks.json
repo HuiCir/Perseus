@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "checkedOn": "2026-10-05",
+  "command": "PERSEUS_CODEX_NATIVE_SMOKE=1 node --test test/*.test.mjs",
+  "passed": 80,
+  "failed": 0,
+  "skipped": 0,
+  "modelRequests": 0,
+  "scope": "Release source copy, native deterministic fixtures and isolation tests; no user plugin installation or account changes."
+}

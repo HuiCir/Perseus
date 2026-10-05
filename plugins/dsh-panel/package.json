@@ -1,0 +1,13 @@
+{
+  "name": "dsh-plugin-perseus-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./package.json": "./package.json"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "files": ["lib", "cordis.patch.yml", "README.md"]
+}

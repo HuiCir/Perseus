@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "component": "Perseus algorithm prototype",
+  "version": "0.9.0",
+  "checkedOn": "2026-10-05",
+  "passed": true,
+  "entryPoint": {
+    "versionExitCode": 0,
+    "versionOutput": "Perseus 0.9.0",
+    "helpExitCode": 0,
+    "helpStream": "stderr",
+    "helpUsagePresent": true
+  },
+  "offlineValidation": {
+    "command": "bash prototype/scripts/check-offline.sh",
+    "testCount": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "typecheckPassed": true,
+    "relativeTypeScriptImportsPassed": true,
+    "shellSyntaxPassed": true,
+    "pythonAdapterSyntaxPassed": true,
+    "modelRequests": 0,
+    "dependencies": "prepared in external source-fingerprinted cache by the original preparation script",
+    "swarmDisabledDuringChecks": true
+  },
+  "preservation": {
+    "originalCoreFilesByteIdentical": 293,
+    "changedCoreFiles": [],
+    "missingCoreFiles": [],
+    "algorithmAndSchemasModified": false,
+    "originalSourceDirectoryModified": false
+  },
+  "package": {
+    "file": "dist/Perseus-prototype-0.9.0.zip",
+    "root": "Perseus-prototype-0.9.0",
+    "sha256": "5d935fbb64ceaf10bb94bf1e3a89e3d750c999aa0038fb2a7b49d29d866527ad",
+    "bytes": 1544148,
+    "fileCount": 313,
+    "requiredFilesPresent": [
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md",
+      "VERSION",
+      "perseus",
+      "README.md",
+      "CONTEXT-0.9.md",
+      "adapters/work_copies.py",
+      "docs/INDEPENDENT_EXECUTION.md",
+      "extensions/http-tools.ts",
+      "context-management.test.ts",
+      "context-regression.test.ts",
+      "configuration.test.mjs",
+      "scripts/check-offline.sh",
+      "harness/package-lock.json",
+      "docs/third-party/highlight.js-11.9.0-LICENSE",
+      "docs/third-party/marked-15.0.4-LICENSE.md"
+    ],
+    "matchesPublicationSources": true,
+    "launcherExecutable": true,
+    "unpackedOfflineTestsPassed": true,
+    "dependenciesAndRuntimeArtifactsExcluded": true,
+    "credentialPatternMatches": 0
+  },
+  "releaseCorrections": [
+    "version-derived launcher and package metadata",
+    "version-derived configuration User-Agent",
+    "provider adapter, complete documentation, and regression tests included",
+    "private historical JPEG trace replaced with a synthetic transport fixture",
+    "version-pinned Highlight.js and Marked licenses included"
+  ],
+  "limits": [
+    "This is an algorithm demonstration and experimental context-management candidate.",
+    "Offline checks do not establish benchmark task quality, latency improvement, or cost reduction.",
+    "No real model requests, remote tool host, or Docker execution were tested during packaging.",
+    "The synthetic JPEG transport fixture tests preservation and decoding; it is not a benchmark replay."
+  ]
+}

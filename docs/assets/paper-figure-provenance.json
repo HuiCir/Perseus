@@ -1,0 +1,44 @@
+{
+  "source_filename": "iclr_2027_perseus-1944.pdf",
+  "source_sha256": "ea24a500dee25c913dd66216c213446b4dcad4173ec4625c70ecaf94a3973f63",
+  "paper_title": "PERSEUS: Non-Blocking Parallel Exploration with a Speculative Swarm",
+  "paper_status": "Anonymous manuscript, under review as a conference paper at ICLR 2027; not an accepted-publication claim.",
+  "assets": [
+    {
+      "file": "perseus-overview.png",
+      "figure": "Figure 1: Overview of PERSEUS, including A naming analogy and B runtime",
+      "source_page_1_based": 2,
+      "crop_bbox_pdf_points": [
+        108,
+        84,
+        504,
+        376
+      ],
+      "bbox_origin": "top-left",
+      "resolution_dpi": 300,
+      "pixel_dimensions": [
+        1650,
+        1217
+      ],
+      "treatment": "Direct PDF page render with crop; no redraw or alteration of content."
+    },
+    {
+      "file": "logical-folding.png",
+      "figure": "Figure 5: Logical folding of independent acquisition",
+      "source_page_1_based": 9,
+      "crop_bbox_pdf_points": [
+        108,
+        81,
+        504,
+        199
+      ],
+      "bbox_origin": "top-left",
+      "resolution_dpi": 300,
+      "pixel_dimensions": [
+        1650,
+        493
+      ],
+      "treatment": "Direct PDF page render with crop; no redraw or alteration of content."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "perseus",
+  "version": "0.2.1",
+  "description": "Asynchronous speculative evidence for the native Codex agent.",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Perseus",
+    "shortDescription": "Explore tool alternatives while Codex continues.",
+    "developerName": "Perseus contributors",
+    "category": "Productivity"
+  }
+}

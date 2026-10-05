@@ -1,0 +1,20 @@
+{
+  "name": "codex-plugin-perseus",
+  "version": "0.2.1",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node scripts/run.mjs",
+    "pack:plugin": "node scripts/pack.mjs",
+    "vendor": "node scripts/vendor.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "esbuild": "0.25.10"
+  }
+}
