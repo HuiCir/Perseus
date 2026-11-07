@@ -28,11 +28,17 @@ as BFCL or substitute a BFCL subset here.
   telecom case IDs intact; they encode scenario attributes.
 - `benchmarks/terminal-bench-2/cases.txt` — 31 exact case IDs, one per line.
 - `benchmarks/gaia/cases.txt` — 56 exact case IDs, one per line.
+- `benchmarks/gaia/ACCESS.md` — how to obtain the private GAIA-56 task bundle
+  (questions, gold answers, 11 attachments) without public redistribution.
+- `benchmarks/gaia/attachments.sha256` — public SHA-256 list of the 11 GAIA
+  attachment files; the files themselves remain in the private bundle.
 
 The JSON manifest uses only `benchmark`, `case_id`, and public GAIA partition
 metadata. It excludes prompts, targets, answers, historical scores, logs,
-result paths and evidence. Use the manifest only to select cases, then load
-task text, tools, environments and graders from each benchmark's native source.
+result paths and evidence. The GAIA question text, gold answers and attachments
+are kept in the private bundle described by `benchmarks/gaia/ACCESS.md`, not in
+this public repository. Use the manifest only to select cases, then load task
+text, tools, environments and graders from the native source or private bundle.
 
 ## Selection provenance
 
@@ -48,7 +54,9 @@ task text, tools, environments and graders from each benchmark's native source.
   both methods to the same case IDs.
 - GAIA: all 56 selected cases have a public validation answer and participate
   in the local score denominator. The set contains 10 L1, 20 L2 and 26 L3
-  cases and retains every locally scoreable validation L3 case.
+  cases and retains every locally scoreable validation L3 case. The task text,
+  gold answers and 11 attachments are in the private Hugging Face dataset
+  `Migraine/Perseus-GAIA-56`; see `benchmarks/gaia/ACCESS.md`.
 
 `manifests/main-183.json` records the SHA-256 of each frozen source manifest
 under `sources`. The generated case lists and manifest are checked for exact

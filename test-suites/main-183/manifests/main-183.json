@@ -932,7 +932,16 @@
     },
     "gaia": {
       "source": "HarnessEval light GAIA 2023 validation selection; 56 locally scoreable cases (L1 10, L2 20, L3 26)",
-      "source_manifest_sha256": "edf5e60c45371b3babf6d236c341fa462cf08a11fe99bb6e264bd2387e36fc8d"
+      "source_manifest_sha256": "edf5e60c45371b3babf6d236c341fa462cf08a11fe99bb6e264bd2387e36fc8d",
+      "task_bundle": {
+        "repo": "https://huggingface.co/datasets/Migraine/Perseus-GAIA-56",
+        "visibility": "private",
+        "case_count": 56,
+        "attachment_count": 11,
+        "attachment_bytes": 2146661,
+        "manifest_sha256": "dafbb64d3a59c015ccece65049f86e1b26bcf8fcc63a02a5e368119be91f9d0a",
+        "access_note": "GAIA gating terms prohibit public resharing. The public repo keeps case IDs and attachment hashes only; questions, gold answers and attachments are in the private HF dataset."
+      }
     }
   },
   "selection_notes": {
@@ -946,6 +955,7 @@
       "qemu-alpine-ssh",
       "qemu-startup",
       "train-fasttext"
-    ]
+    ],
+    "gaia_task_content": "Private Hugging Face dataset Migraine/Perseus-GAIA-56; see benchmarks/gaia/ACCESS.md. Public repo contains case IDs and attachment hashes only."
   }
 }
