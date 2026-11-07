@@ -1,0 +1,951 @@
+{
+  "schema_version": 1,
+  "suite": "perseus-main-183",
+  "description": "Frozen four-benchmark main-comparison selection used by the Perseus main study: AutomationBench 36, tau2 60, Terminal-Bench 2 31, GAIA 56 (183 total). Case identifiers only; task text, tools, environments, targets and graders stay in each benchmark source.",
+  "benchmark_order": [
+    "automationbench",
+    "tau2",
+    "terminal-bench-2",
+    "gaia"
+  ],
+  "counts": {
+    "automationbench": 36,
+    "tau2": 60,
+    "terminal-bench-2": 31,
+    "gaia": 56,
+    "total": 183
+  },
+  "cases": [
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:516"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:601"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:1144"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1090"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1166"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1132"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1232"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1217"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1224"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1494"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1509"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1536"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4088"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4073"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4052"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5069"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5047"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5067"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:504"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:109"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:1002"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1115"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1080"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1142"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1262"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1234"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1339"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1529"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1580"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1493"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4074"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4044"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4018"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5008"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5118"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5101"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:12"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:14"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:44"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:10"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:9"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:18"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:42"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:31"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:11"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:23"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:39"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:46"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:38"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:43"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:34"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:41"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:7"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:2"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:0"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:8"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:87"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:32"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:89"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:46"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:57"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:43"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:108"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:47"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:24"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:85"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:38"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:25"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:105"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:19"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:80"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:104"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:63"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:45"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:75"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:3"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|data_mode_off[PERSONA:None]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]bad_network_preference|bad_wifi_calling|break_app_both_permissions|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Hard]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|user_abroad_roaming_enabled_off[PERSONA:None]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|user_abroad_roaming_disabled_off[PERSONA:Hard]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]bad_vpn|data_mode_off|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:None]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[service_issue]airplane_mode_on|break_apn_settings[PERSONA:Hard]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]break_app_storage_permission|data_usage_exceeded[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]bad_network_preference|bad_wifi_calling|break_app_both_permissions|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:None]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|bad_vpn|data_mode_off|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_sms_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:None]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[service_issue]airplane_mode_on|break_apn_settings|lock_sim_card_pin|overdue_bill_suspension[PERSONA:Hard]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|bad_network_preference|data_mode_off|data_usage_exceeded|user_abroad_roaming_disabled_on[PERSONA:None]"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]airplane_mode_on|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:None]"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "fix-git"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "prove-plus-comm"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "cobol-modernization"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "crack-7z-hash"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "mteb-leaderboard"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "raman-fitting"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "constraints-scheduling"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "mteb-retrieve"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "pytorch-model-recovery"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "kv-store-grpc"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "merge-diff-arc-agi-task"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "vulnerable-secret"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "openssl-selfsigned-cert"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "nginx-request-logging"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "polyglot-c-py"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "break-filter-js-from-html"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "sanitize-git-repo"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "git-leak-recovery"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "financial-document-processor"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "reshard-c4-data"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "multi-source-data-merger"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "pytorch-model-cli"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "count-dataset-tokens"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "tune-mjcf"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "sqlite-with-gcov"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "code-from-image"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "dna-insert"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "extract-elf"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "custom-memory-heap-crash"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "configure-git-webserver"
+    },
+    {
+      "benchmark": "terminal-bench-2",
+      "case_id": "hf-model-inference"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "9318445f-fe6a-4e1b-acbf-c68228c9906a",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "5a0c1adf-205e-4841-a666-7c3ef95def9d",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "4b650a35-8529-4695-89ed-8dc7a500a498",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "42576abe-0deb-4869-8c63-225c2d75a95a",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "3f57289b-8c60-48be-bd80-01f8099ca449",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "c714ab3a-da30-4603-bacd-d008800188b9",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "50ec8903-b81f-4257-9450-1085afd2c319",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+      "split": "validation",
+      "level": 1,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "8b3379c0-0981-4f5b-8407-6444610cb212",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "dd3c7503-f62a-4bd0-9f67-1b63b94194cc",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "d5141ca5-e7a0-469f-bf3e-e773507c86e2",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "b9763138-c053-4832-9f55-86200cb1f99c",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "6b078778-0b90-464d-83f6-59511c811b01",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "2b3ef98c-cc05-450b-a719-711aee40ac65",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "e0c10771-d627-4fd7-9694-05348e54ee36",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "f46b4380-207e-4434-820b-f32ce04ae2a4",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "d1af70ea-a9a4-421a-b9cc-94b5e02f1788",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "c8b7e059-c60d-472e-ad64-3b04ae1166dc",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "d700d50d-c707-4dca-90dc-4528cddd0c80",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "20194330-9976-4043-8632-f8485c6c71b2",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "708b99c5-e4a7-49cb-a5cf-933c8d46470d",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "7cc4acfa-63fd-4acc-a1a1-e8e529e0a97f",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "71345b0a-9c7d-4b50-b2bf-937ec5879845",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "54612da3-fd56-4941-80f4-5eb82330de25",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "0b260a57-3f3a-4405-9f29-6d7a1012dbfb",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "0a65cb96-cb6e-4a6a-8aae-c1084f613456",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "9f41b083-683e-4dcf-9185-ccfeaa88fa45",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "a26649c6-1cb2-470a-871e-6910c64c3e53",
+      "split": "validation",
+      "level": 2,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "ad2b4d70-9314-4fe6-bfbe-894a45f6055f",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "50f58759-7bd6-406f-9b0d-5692beb2a926",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "ebbc1f13-d24d-40df-9068-adcf735b4240",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "5f982798-16b9-4051-ab57-cfc7ebdb2a91",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "de9887f5-ead8-4727-876f-5a4078f8598c",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "72c06643-a2fa-4186-aa5c-9ec33ae9b445",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "676e5e31-a554-4acc-9286-b60d90a92d26",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "3da89939-209c-4086-8520-7eb734e6b4ef",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "00d579ea-0889-4fd9-a771-2c8d79835c8d",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "0512426f-4d28-49f0-be77-06d05daec096",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "384d0dd8-e8a4-4cfe-963c-d37f256e7662",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "0bdb7c40-671d-4ad1-9ce3-986b159c0ddc",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "5b2a14e8-6e59-479c-80e3-4696e8980152",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "c526d8d6-5987-4da9-b24c-83466fa172f3",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "9b54f9d9-35ee-4a14-b62f-d130ea00317f",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "983bba7c-c092-455f-b6c9-7857003d48fc",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "8131e2c0-0083-4265-9ce7-78c2d568425d",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "9e1fc53b-46ff-49a1-9d05-9e6faac34cc5",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "e961a717-6b25-4175-8a68-874d28190ee4",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "c3a79cfe-8206-451f-aca8-3fec8ebe51d3",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "da52d699-e8d2-4dc5-9191-a2199e0b6a9b",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "8d46b8d6-b38a-47ff-ac74-cda14cf2d19b",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "bec74516-02fc-48dc-b202-55e78d0e17cf",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "851e570a-e3de-4d84-bcfa-cc85578baa59",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "56db2318-640f-477a-a82f-bc93ad13e882",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "872bfbb1-9ccf-49f6-8c5f-aa22818ccd66",
+      "split": "validation",
+      "level": 3,
+      "scoreability": "local_official"
+    }
+  ],
+  "sources": {
+    "automationbench": {
+      "source": "HarnessEval light automationbench selection; AutomationBench 1.0.6 revision 4a8e1061254004d9dac807054eed33fad7d1ff14",
+      "source_manifest_sha256": "231ef4b5e4c0711056e94448b3cff5771c3c1b71812694c473e2c23adebc308d"
+    },
+    "tau2": {
+      "source": "HarnessEval light tau2 selection; tau2 base split, 20 airline / 20 retail / 20 telecom",
+      "source_manifest_sha256": "57528e31b654bff4cb027b27dd22187afecaf35eb4133a28443eb789d59cb120"
+    },
+    "terminal-bench-2": {
+      "source": "Frozen Perseus main-study Terminal-Bench 2 subset (31 cases); HarnessEval light terminal-bench-2 contains 34, this main subset omits qemu-alpine-ssh, qemu-startup and train-fasttext",
+      "source_manifest_sha256": "0dc810960b6824482562662cdec740197a3edbed55134f4a04e912cb1d0220ec"
+    },
+    "gaia": {
+      "source": "HarnessEval light GAIA 2023 validation selection; 56 locally scoreable cases (L1 10, L2 20, L3 26)",
+      "source_manifest_sha256": "edf5e60c45371b3babf6d236c341fa462cf08a11fe99bb6e264bd2387e36fc8d"
+    }
+  },
+  "selection_notes": {
+    "outcome_blind": true,
+    "historical_runs_used": false,
+    "model_outcomes_used": false,
+    "case_ids_only": true,
+    "gaia_all_local_official": true,
+    "tau2_not_bfcl": "The 60-case main-comparison benchmark is tau2-Bench. BFCL is a separate supplementary study (156 cases) and is not part of this 183-case suite.",
+    "terminal_31_subset_of_light_34": [
+      "qemu-alpine-ssh",
+      "qemu-startup",
+      "train-fasttext"
+    ]
+  }
+}

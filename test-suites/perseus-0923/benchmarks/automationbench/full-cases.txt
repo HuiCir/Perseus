@@ -1,7 +1,0 @@
-finance:4044
-hr:5118
-marketing:1115
-marketing:1132
-operations:1224
-sales:601
-support:1536
