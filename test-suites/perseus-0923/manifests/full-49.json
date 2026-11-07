@@ -1,0 +1,250 @@
+{
+  "suite_id": "perseus-0923-broad",
+  "cases": [
+    {
+      "benchmark": "automationbench",
+      "case_id": "finance:4044",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "hr:5118",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1115",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "marketing:1132",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "operations:1224",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "sales:601",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "automationbench",
+      "case_id": "support:1536",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "72c06643-a2fa-4186-aa5c-9ec33ae9b445",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "851e570a-e3de-4d84-bcfa-cc85578baa59",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "8d46b8d6-b38a-47ff-ac74-cda14cf2d19b",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "ad2b4d70-9314-4fe6-bfbe-894a45f6055f",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "bec74516-02fc-48dc-b202-55e78d0e17cf",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "c3a79cfe-8206-451f-aca8-3fec8ebe51d3",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "c526d8d6-5987-4da9-b24c-83466fa172f3",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "gaia",
+      "case_id": "da52d699-e8d2-4dc5-9191-a2199e0b6a9b",
+      "integrity_partition": "provisional_gaia"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:23",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:39",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:44",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "airline:7",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:105",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:19",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:45",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "retail:80",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_sms_permission|data_mode_off|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:None]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|break_apn_mms_setting|break_app_storage_permission|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:Easy]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|bad_wifi_calling|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_on[PERSONA:Easy]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]airplane_mode_on|bad_network_preference|break_app_storage_permission|data_mode_off|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]bad_network_preference|bad_wifi_calling|break_app_both_permissions|data_usage_exceeded|unseat_sim_card|user_abroad_roaming_disabled_off[PERSONA:None]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mms_issue]bad_network_preference|bad_wifi_calling|break_app_both_permissions|data_usage_exceeded|user_abroad_roaming_disabled_off[PERSONA:Hard]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "tau2",
+      "case_id": "telecom:[mobile_data_issue]bad_network_preference|bad_vpn|data_mode_off|data_saver_mode_on|data_usage_exceeded|user_abroad_roaming_enabled_off[PERSONA:Easy]",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "cobol-modernization",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "code-from-image",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "constraints-scheduling",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "crack-7z-hash",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "custom-memory-heap-crash",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "dna-insert",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "extract-elf",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "financial-document-processor",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "fix-git",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "git-leak-recovery",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "mteb-leaderboard",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "multi-source-data-merger",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "openssl-selfsigned-cert",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "polyglot-c-py",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "prove-plus-comm",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "pytorch-model-recovery",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "raman-fitting",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "sanitize-git-repo",
+      "integrity_partition": "core"
+    },
+    {
+      "benchmark": "terminal",
+      "case_id": "vulnerable-secret",
+      "integrity_partition": "core"
+    }
+  ]
+}
